@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FARA Logics Inc. — Enterprise architecture, software engineering, and technology advisory. Established 1995 in Toronto, Canada.">
+  <title>FARA Logics Inc.</title>
+  <style>
+    :root {
+      --navy: #1d354e;
+      --steel: #788796;
+      --text: #344357;
+      --muted: #718094;
+      --border: #e6eaee;
+      --background: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(100% - 48px, 1050px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 52px 0 35px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .symbol { width: 43px; height: 48px; }
+
+    .wordmark {
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 0.035em;
+      line-height: 1;
+    }
+
+    .wordmark .fara { color: var(--navy); }
+    .wordmark .logics { color: var(--steel); }
+
+    nav { display: flex; gap: 28px; }
+
+    nav a {
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    nav a:hover, a:focus-visible { color: var(--navy); }
+
+    .hero {
+      padding: 115px 0 115px;
+    }
+
+    .eyebrow {
+      color: var(--steel);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      color: var(--navy);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      font-size: clamp(35px, 5vw, 58px);
+      line-height: 1.24;
+      max-width: 850px;
+      margin: 25px 0;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 710px;
+      line-height: 1.8;
+    }
+
+    section.content {
+      border-top: 1px solid var(--border);
+      padding: 75px 0;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 80px;
+    }
+
+    h2 {
+      font-size: 23px;
+      margin: 0;
+    }
+
+    .section-body { max-width: 690px; }
+
+    .section-body p:first-child { margin-top: 0; }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px 38px;
+      margin-top: 12px;
+    }
+
+    .area {
+      padding: 0 0 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 37px 0 55px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    a { color: var(--navy); }
+
+    @media (max-width: 700px) {
+      header { padding: 25px 0; }
+      .header-content { align-items: flex-start; flex-direction: column; }
+      nav { flex-wrap: wrap; gap: 12px 22px; }
+      .wordmark { font-size: 21px; }
+      .symbol { width: 36px; height: 41px; }
+      .hero { padding: 76px 0; }
+      .section-grid { grid-template-columns: 1fr; gap: 22px; }
+      section.content { padding: 55px 0; }
+      .areas { grid-template-columns: 1fr; }
+      .footer-content { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <a href="#top" class="logo" aria-label="FARA Logics home">
+      <svg class="symbol" viewBox="0 0 48 54"
+           xmlns="http://www.w3.org/2000/svg"
+           aria-hidden="true">
+        <path d="M15 5 H47 L37 16 H5 Z" fill="#1d354e"/>
+        <path d="M5 20 H35 L25 31 H16 V48 L5 54 Z"
+              fill="#1d354e"/>
+        <path d="M14 20 H35 L26 29 H20 Z"
+              fill="#8c9aa8"/>
+      </svg>
+      <span class="wordmark">
+        <span class="fara">FARA</span><span class="logics">LOGICS</span>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Areas of Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="container">
+    <div class="hero">
+      <div class="eyebrow">Established 1995 · Toronto, Canada</div>
+      <h1>Thoughtful technology.<br>Enduring principles.</h1>
+      <p>
+        Enterprise architecture, software engineering,
+        and technology advisory grounded in independent
+        thinking, sound design, and open standards.
+      </p>
+    </div>
+  </div>
+
+  <section class="content" id="about">
+    <div class="container section-grid">
+      <h2>About FARA</h2>
+      <div class="section-body">
+        <p>
+          FARA Logics Inc. was established in Toronto in
+          1995 as a technology consulting firm specializing
+          in software engineering, systems architecture,
+          and technology advisory.
+        </p>
+        <p>
+          Its work has encompassed enterprise systems,
+          financial technologies, systems integration,
+          and the design of complex software environments.
+          Throughout its history, FARA has emphasized
+          architectural clarity, technical rigor, and
+          lasting professional relationships.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="work">
+    <div class="container section-grid">
+      <h2>Areas of Work</h2>
+      <div class="section-body">
+        <div class="areas">
+          <div class="area">Enterprise Architecture</div>
+          <div class="area">Software Engineering</div>
+          <div class="area">Systems Integration</div>
+          <div class="area">Technology Strategy</div>
+          <div class="area">Financial Systems</div>
+          <div class="area">Architecture Advisory</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="approach">
+    <div class="container section-grid">
+      <h2>Our Approach</h2>
+      <div class="section-body">
+        <p>
+          FARA's approach has always placed careful analysis
+          and architectural reasoning at the centre of
+          technology decisions.
+        </p>
+        <p>
+          The emphasis is on understanding systems as a whole:
+          their underlying structures, their integration
+          with existing environments, and their capacity
+          to evolve over time.
+        </p>
+        <p>
+          Equally important is the development of people,
+          the sharing of expertise, and the cultivation of
+          independent technical judgment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="contact">
+    <div class="container section-grid">
+      <h2>Contact</h2>
+      <div class="section-body">
+        <p>
+          Toronto, Canada<br>
+          <a href="mailto:mnaderi@faralogics.com">
+            mnaderi@faralogics.com
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <span>© FARA Logics Inc.</span>
+    <span>Established 1995 · Toronto, Canada</span>
+  </div>
+</footer>
+
+</body>
+</html>
