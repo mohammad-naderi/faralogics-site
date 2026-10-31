@@ -168,6 +168,31 @@
       .areas { grid-template-columns: 1fr; }
       .footer-content { flex-direction: column; }
     }
+    
+.areas-of-expertise {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+}
+
+.expertise-column h3 {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.expertise-column .area {
+  padding: 12px 0;
+}
+
+@media (max-width: 700px) {
+  .areas-of-expertise {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -184,7 +209,7 @@
 
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#work">Areas of Work</a>
+      <a href="#work">Enterprise</a>
       <a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -227,20 +252,32 @@
   </section>
 
   <section class="content" id="work">
-    <div class="container section-grid">
-      <h2>Areas of Work</h2>
-      <div class="section-body">
-        <div class="areas">
+  <div class="container section-grid">
+    <h2>Areas of Expertise</h2>
+    <div class="section-body">
+      <div class="areas-of-expertise">
+
+        <div class="expertise-column">
+          <h3>Architecture &amp; Engineering</h3>
           <div class="area">Enterprise Architecture</div>
+          <div class="area">Technology Strategy</div>
           <div class="area">Software Engineering</div>
           <div class="area">Systems Integration</div>
-          <div class="area">Technology Strategy</div>
-          <div class="area">Financial Systems</div>
-          <div class="area">Architecture Advisory</div>
+          <div class="area">Enterprise Application Security</div>
         </div>
+
+        <div class="expertise-column">
+          <h3>Business &amp; Technology Domains</h3>
+          <div class="area">Payment Systems</div>
+          <div class="area">Customer Information Systems</div>
+          <div class="area">Financial Services Technology</div>
+          <div class="area">Enterprise Information Management</div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="content" id="approach">
     <div class="container section-grid">
